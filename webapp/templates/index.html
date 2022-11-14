@@ -1,0 +1,454 @@
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+   <head>
+      <style class="darkreader darkreader--fallback" media="screen"></style>
+      <style class="darkreader darkreader--text" media="screen"></style>
+      <style class="darkreader darkreader--invert" media="screen"></style>
+      <style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+         background-color: var(--darkreader-inline-bgcolor) !important;
+         }
+         [data-darkreader-inline-bgimage] {
+         background-image: var(--darkreader-inline-bgimage) !important;
+         }
+         [data-darkreader-inline-border] {
+         border-color: var(--darkreader-inline-border) !important;
+         }
+         [data-darkreader-inline-border-bottom] {
+         border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+         }
+         [data-darkreader-inline-border-left] {
+         border-left-color: var(--darkreader-inline-border-left) !important;
+         }
+         [data-darkreader-inline-border-right] {
+         border-right-color: var(--darkreader-inline-border-right) !important;
+         }
+         [data-darkreader-inline-border-top] {
+         border-top-color: var(--darkreader-inline-border-top) !important;
+         }
+         [data-darkreader-inline-boxshadow] {
+         box-shadow: var(--darkreader-inline-boxshadow) !important;
+         }
+         [data-darkreader-inline-color] {
+         color: var(--darkreader-inline-color) !important;
+         }
+         [data-darkreader-inline-fill] {
+         fill: var(--darkreader-inline-fill) !important;
+         }
+         [data-darkreader-inline-stroke] {
+         stroke: var(--darkreader-inline-stroke) !important;
+         }
+         [data-darkreader-inline-outline] {
+         outline-color: var(--darkreader-inline-outline) !important;
+         }
+         [data-darkreader-inline-stopcolor] {
+         stop-color: var(--darkreader-inline-stopcolor) !important;
+         }
+      </style>
+      <style class="darkreader darkreader--variables" media="screen">:root {
+         --darkreader-neutral-background: #1f2020;
+         --darkreader-neutral-text: #d6d0c6;
+         --darkreader-selection-background: #15539c;
+         --darkreader-selection-text: #e5e0d8;
+         }
+      </style>
+      <style class="darkreader darkreader--root-vars" media="screen"></style>
+      <style class="darkreader darkreader--user-agent" media="screen">html {
+         background-color: #242525 !important;
+         }
+         html {
+         color-scheme: dark !important;
+         }
+         html, body {
+         background-color: #242525;
+         }
+         html, body {
+         border-color: #776f62;
+         color: #e5e0d8;
+         }
+         a {
+         color: #4791e6;
+         }
+         table {
+         border-color: #5c6060;
+         }
+         ::placeholder {
+         color: #b2aa9e;
+         }
+         input:-webkit-autofill,
+         textarea:-webkit-autofill,
+         select:-webkit-autofill {
+         background-color: #484a12 !important;
+         color: #e5e0d8 !important;
+         }
+         ::-webkit-scrollbar {
+         background-color: #2b2d2d;
+         color: #aca496;
+         }
+         ::-webkit-scrollbar-thumb {
+         background-color: #4e5151;
+         }
+         ::-webkit-scrollbar-thumb:hover {
+         background-color: #5f6364;
+         }
+         ::-webkit-scrollbar-thumb:active {
+         background-color: #515455;
+         }
+         ::-webkit-scrollbar-corner {
+         background-color: #242525;
+         }
+         ::selection {
+         background-color: #15539c !important;
+         color: #e5e0d8 !important;
+         }
+         ::-moz-selection {
+         background-color: #15539c !important;
+         color: #e5e0d8 !important;
+         }
+      </style>
+      <meta charset="utf-8">
+      <link rel="icon" href="https://characterai.io/static/favicon.ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta name="theme-color" content="#0d0d0d">
+      <meta name="revised" content="Wednesday, August 10th, 2022, 11:06 am">
+      <link rel="apple-touch-icon" href="https://characterai.io/static/logo192.png">
+      <link rel="manifest" href="https://characterai.io/static/manifest.json">
+      <meta property="og:site_name" content="Character.AI">
+      <meta property="og:type" content="article">
+      <meta property="twitter:site" content="@character_ai">
+      <title>Character.AI</title>
+      <meta property="og:title" content="Character.AI">
+      <meta property="twitter:title" content="Character.AI">
+      <meta name="description" content="Where intelligent agents live!">
+      <meta property="og:description" content="Where intelligent agents live!">
+      <meta property="twitter:description" content="Where intelligent agents live!">
+      <meta property="og:image" content="https://characterai.io/static/logo512.png">
+      <meta property="twitter:image" content="https://characterai.io/static/logo512.png">
+      <!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script><script defer="defer" src="/static/js/main.js"></script> -->
+      <link href="/static/css/main.css" rel="stylesheet">
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style type="text/css">body{
+         color: rgba(0, 0, 0, 0.85);
+         background-color: #fff;
+         }
+         .react-switch .react-switch-icon{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+         }
+         .react-switch-docusaurus .react-switch-icon{
+         font-size: 14px;
+         }
+         .react-switch > .react-switch-bg{
+         box-sizing: border-box;
+         }
+         .react-switch-github__light > .react-switch-bg{
+         border: 3px solid #d1d5da;
+         }
+         .react-switch-github__dark > .react-switch-bg{
+         border: 3px solid #3c1e70;
+         }
+         .react-switch-fluent__light > .react-switch-bg{
+         border: 1px solid #605e5c;
+         }
+         .react-switch-fluent__dark > .react-switch-bg{
+         border: 1px solid #0078d4;
+         }
+      </style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <style type="text/css">.styles_faq-row-wrapper__3vA1D {
+         background-color: var(--faq-bg-color, white); }
+         .styles_faq-row-wrapper__3vA1D h2 {
+         margin: 0;
+         color: var(--title-text-color, black);
+         font-size: var(--title-text-size, 30px); }
+         .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+         display: flex;
+         justify-content: space-between;
+         padding: 5px 0;
+         border-bottom: 1px solid #ccc; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c {
+         flex-direction: column;
+         position: relative; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY {
+         padding: 10px 0;
+         display: flex;
+         justify-content: space-between;
+         color: var(--row-title-color, black);
+         font-size: var(--row-title-text-size, large);
+         cursor: pointer;
+         align-items: center; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_no-tabfocus__1HmyD {
+         outline: none; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_row-title-text__1MuhU {
+         padding-right: 3em; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_icon-wrapper__2cftw {
+         max-width: 25px;
+         max-height: 25px;
+         margin: 0;
+         padding: 0;
+         color: var(--arrow-color, black);
+         transform: rotate(0deg);
+         transition: transform var(--transition-duration, 0.3s);
+         position: absolute;
+         top: 13px;
+         right: 12px; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_icon-wrapper__2cftw svg {
+         width: 100%;
+         height: 100%; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_icon-wrapper__2cftw svg {
+         fill: var(--arrow-color, black); }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_closed__39w54 + .styles_row-content__QOGZd {
+         visibility: hidden; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_closed__39w54 + .styles_row-content__QOGZd.styles_animate__3ecdr {
+         opacity: 0;
+         transition: height var(--transition-duration, 0.3s); }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_closed__39w54 + .styles_row-content__QOGZd.styles_static__3chYW {
+         display: none; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_expanded__3elPy + .styles_row-content__QOGZd {
+         visibility: visible; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_expanded__3elPy + .styles_row-content__QOGZd.styles_static__3chYW {
+         display: block; }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_expanded__3elPy .styles_icon-wrapper__2cftw {
+         transform: rotate(180deg); }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY.styles_expanding__2OAFB .styles_icon-wrapper__2cftw {
+         transform: rotate(180deg); }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-content__QOGZd {
+         overflow: hidden;
+         transition: height var(--transition-duration, 0.3s);
+         transition-timing-function: var(--timing-function, ease); }
+         .styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-content__QOGZd .styles_row-content-text__2sgAB {
+         color: var(--row-content-color, black);
+         font-size: var(--row-content-text-size, medium);
+         padding: var(--row-content-padding-top, 0) var(--row-content-padding-right, 0) var(--row-content-padding-bottom, 0) var(--row-content-padding-left, 0); }
+      </style>
+      <style class="darkreader darkreader--sync" media="screen"></style>
+      <meta name="darkreader" content="e35cbf08c0bf49c99e5fe09abad54c4c">
+      <style class="darkreader darkreader--override" media="screen"></style>
+   </head>
+   <body style="height:100%">
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root" style="height:100%">
+         <div class="Toastify"></div>
+         <div class="apppage">
+            <div>
+               <div class="container-fluid p-0 m-0 d-flex justify-content-start col">
+                  <div class="container-fluid d-flex justify-content-center p-0 m-0">
+                     <div class="container-fluid p-0">
+                        <div class="d-flex justify-content-between" style="border-bottom: 1px solid rgb(238, 238, 238); padding-left: 14px; --darkreader-inline-border-bottom:#3f4141;" data-darkreader-inline-border-bottom="">
+                           <div><a href="/"><img class="img-fluid mt-3 mb-3" src="/static/media/logo.png" alt="logo" style="min-height: 20px; max-height: 70px; max-width: 77%; width: auto;"></a></div>
+                           <div class="d-flex align-items-center">
+                              <a class="btn" role="button" href="/search?">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28" width="28" xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                 </svg>
+                              </a>
+                              <a class="btn" href="https://book.character.ai" target="_blank">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28" width="28" xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z"></path>
+                                    <path d="M17.5 10.5c.88 0 1.73.09 2.5.26V9.24c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99zM13 12.49v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26V11.9c-.79-.15-1.64-.24-2.5-.24-1.7 0-3.24.3-4.5.83zM17.5 14.33c-1.7 0-3.24.29-4.5.83v1.66c1.13-.64 2.7-.99 4.5-.99.88 0 1.73.09 2.5.26v-1.52c-.79-.16-1.64-.24-2.5-.24z"></path>
+                                 </svg>
+                              </a>
+                              <a class="btn" role="button" href="/help?">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28" width="28" xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path>
+                                 </svg>
+                              </a>
+                              <a class="btn" role="button" href="/profile?">
+                                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="28" width="28" xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                        <div class="row w-100">
+                           <div style="padding-left: 60px; padding-right: 0px;">
+                              <div class="w-100 p-0">
+                                 <div class="container-fluid p-0 m-0">
+                                    <div style="overflow-x: hidden;">
+                                       <div class="pt-3" style="margin-right: 0px; padding-left: 10px;">
+                                          <div class="infinite-scroll-component__outerdiv">
+                                             <div class="infinite-scroll-component " style="height: auto; overflow: auto;">
+                                                <div style="margin-bottom: 20px;">
+                                                   <h5>Models</h5>
+                                                   <div class="swiper swiper-virtual swiper-initialized swiper-horizontal swiper-pointer-events swiper-css-mode swiper-watch-progress" style="padding: 0px 50px;">
+                                                      <div class="swiper-wrapper" style="--swiper-virtual-size:53953.3px;">
+                                                         <div class="swiper-slide swiper-slide-visible" style="left: 0px; width: 263.333px; margin-right: 12px;">
+                                                            <div class="character-slide-card card" style="overflow: hidden; width: inherit; height: inherit; box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 0px; border: 0px; max-width: 99%; --darkreader-inline-boxshadow:rgba(13, 13, 13, 0.2) 2px 2px 4px 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-boxshadow="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                                               <div class="character-slide-box">
+                                                                  <div class="character-slide-info" style="padding: 8px; overflow: auto; cursor: pointer; width: 100%; aspect-ratio: 1 / 1; background-color: white; z-index: 100; opacity: 0.85; --darkreader-inline-bgcolor:#242525;" data-darkreader-inline-bgcolor="">This big bully girl wants to steal your lunch</div>
+                                                                  <div class="character-slide-image" style="cursor: pointer;">
+                                                                     <div class="charater-avatar-image" style="width: 100%; border-radius: 4px 4px 0px 0px; aspect-ratio: 1 / 1; background-size: cover; background-image: linear-gradient(-45deg, rgb(226, 171, 0), rgb(226, 115, 0)); padding-bottom: 5px; filter: saturate(0.75); font-size: 4em; --darkreader-inline-bgimage:linear-gradient(-45deg, #b08a18, #ad6316);" data-darkreader-inline-bgimage="">
+                                                                        <div></div>
+                                                                        <div style="margin-bottom: -5px;">K</div>
+                                                                        <div class="character-image-name" style="align-self: flex-start; padding-left: 5px;">Kasey the bully girl</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="card-footer" style="padding: 5px; font-size: 12px;">
+                                                                  <div class="username-truncated"><a class="p-0 m-0" role="button" href="/public-profile/?username=Potatass" style="color: inherit; text-decoration: none; --darkreader-inline-color: inherit;" data-darkreader-inline-color="">@Potatass</a></div>
+                                                                  <div class="d-flex align-items-center">
+                                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                                     </svg>
+                                                                     76.5 K
+                                                                  </div>
+                                                                  <div class="description-truncated">This big bully girl wants to steal your lunch</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="swiper-slide swiper-slide-visible" style="left: 0px; width: 263.333px; margin-right: 12px;">
+                                                            <div class="character-slide-card card" style="overflow: hidden; width: inherit; height: inherit; box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 0px; border: 0px; max-width: 99%; --darkreader-inline-boxshadow:rgba(13, 13, 13, 0.2) 2px 2px 4px 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-boxshadow="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                                               <div class="character-slide-box">
+                                                                  <div class="character-slide-info" style="padding: 8px; overflow: auto; cursor: pointer; width: 100%; aspect-ratio: 1 / 1; background-color: white; z-index: 100; opacity: 0.85; --darkreader-inline-bgcolor:#242525;" data-darkreader-inline-bgcolor="">A sultry, Flirty, Curvy, Enticing jewel thief.</div>
+                                                                  <div class="character-slide-image" style="cursor: pointer;">
+                                                                     <div class="charater-avatar-image" style="width: 100%; border-radius: 4px 4px 0px 0px; aspect-ratio: 1 / 1; background-size: cover; background-image: linear-gradient(rgba(255, 255, 255, 0), 85%, rgba(0, 0, 0, 0.7)), url(&quot;https://characterai.io/i/400/static/avatars/uploaded/2022/10/27/L9IovVY-3b0BmJym6Qt0fcMa4K5uHqLklMeXahck16o.webp&quot;); padding-bottom: 5px; filter: saturate(1); font-size: 4em;">
+                                                                        <div></div>
+                                                                        <div style="margin-bottom: -5px;"></div>
+                                                                        <div class="character-image-name" style="align-self: flex-start; padding-left: 5px;">Rouge the Bat</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="card-footer" style="padding: 5px; font-size: 12px;">
+                                                                  <div class="username-truncated"><a class="p-0 m-0" role="button" href="/public-profile/?username=BigLad4U" style="color: inherit; text-decoration: none; --darkreader-inline-color: inherit;" data-darkreader-inline-color="">@BigLad4U</a></div>
+                                                                  <div class="d-flex align-items-center">
+                                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                                     </svg>
+                                                                     119.5 K
+                                                                  </div>
+                                                                  <div class="description-truncated">A sultry, Flirty, Curvy, Enticing jewel thief.</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="swiper-slide swiper-slide-visible" style="left: 0px; width: 263.333px; margin-right: 12px;">
+                                                            <div class="character-slide-card card" style="overflow: hidden; width: inherit; height: inherit; box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 0px; border: 0px; max-width: 99%; --darkreader-inline-boxshadow:rgba(13, 13, 13, 0.2) 2px 2px 4px 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-boxshadow="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                                               <div class="character-slide-box">
+                                                                  <div class="character-slide-info" style="padding: 8px; overflow: auto; cursor: pointer; width: 100%; aspect-ratio: 1 / 1; background-color: white; z-index: 100; opacity: 0.85; --darkreader-inline-bgcolor:#242525;" data-darkreader-inline-bgcolor="">Sadistic, silent, serial killer, cannibal,unhinged</div>
+                                                                  <div class="character-slide-image" style="cursor: pointer;">
+                                                                     <div class="charater-avatar-image" style="width: 100%; border-radius: 4px 4px 0px 0px; aspect-ratio: 1 / 1; background-size: cover; background-image: linear-gradient(rgba(255, 255, 255, 0), 85%, rgba(0, 0, 0, 0.7)), url(&quot;https://characterai.io/i/400/static/avatars/uploaded/2022/11/8/-yil2PfyxDflcEs47L1GeAritvamwliCZmD-RxjYf7E.webp&quot;); padding-bottom: 5px; filter: saturate(1); font-size: 4em;">
+                                                                        <div></div>
+                                                                        <div style="margin-bottom: -5px;"></div>
+                                                                        <div class="character-image-name" style="align-self: flex-start; padding-left: 5px;">Bob Velseb</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="card-footer" style="padding: 5px; font-size: 12px;">
+                                                                  <div class="username-truncated"><a class="p-0 m-0" role="button" href="/public-profile/?username=CursedExBF" style="color: inherit; text-decoration: none; --darkreader-inline-color: inherit;" data-darkreader-inline-color="">@CursedExBF</a></div>
+                                                                  <div class="d-flex align-items-center">
+                                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                                     </svg>
+                                                                     39.0 K
+                                                                  </div>
+                                                                  <div class="description-truncated">Sadistic, silent, serial killer, cannibal,unhinged</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="swiper-slide" style="left: 0px; width: 263.333px; margin-right: 12px;">
+                                                            <div class="character-slide-card card" style="overflow: hidden; width: inherit; height: inherit; box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 0px; border: 0px; max-width: 99%; --darkreader-inline-boxshadow:rgba(13, 13, 13, 0.2) 2px 2px 4px 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-boxshadow="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                                               <div class="character-slide-box">
+                                                                  <div class="character-slide-info" style="padding: 8px; overflow: auto; cursor: pointer; width: 100%; aspect-ratio: 1 / 1; background-color: white; z-index: 100; opacity: 0.85; --darkreader-inline-bgcolor:#242525;" data-darkreader-inline-bgcolor="">I'm a Sans fangirl! Hope you don't mind, haha!</div>
+                                                                  <div class="character-slide-image" style="cursor: pointer;">
+                                                                     <div class="charater-avatar-image" style="width: 100%; border-radius: 4px 4px 0px 0px; aspect-ratio: 1 / 1; background-size: cover; background-image: linear-gradient(rgba(255, 255, 255, 0), 85%, rgba(0, 0, 0, 0.7)), url(&quot;https://characterai.io/i/400/static/avatars/uploaded/2022/11/12/a4s9rkToxEqyE8gJsX0PRxvqpocrj0uMTfL6qnrBQtA.webp&quot;); padding-bottom: 5px; filter: saturate(1); font-size: 4em;">
+                                                                        <div></div>
+                                                                        <div style="margin-bottom: -5px;"></div>
+                                                                        <div class="character-image-name" style="align-self: flex-start; padding-left: 5px;">Mrs Pizza</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="card-footer" style="padding: 5px; font-size: 12px;">
+                                                                  <div class="username-truncated"><a class="p-0 m-0" role="button" href="/public-profile/?username=ThatPizzaTowerFan" style="color: inherit; text-decoration: none; --darkreader-inline-color: inherit;" data-darkreader-inline-color="">@ThatPizzaTowerFan</a></div>
+                                                                  <div class="d-flex align-items-center">
+                                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                                     </svg>
+                                                                     49.9 K
+                                                                  </div>
+                                                                  <div class="description-truncated">I'm a Sans fangirl! Hope you don't mind, haha!</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                         <div class="swiper-slide" style="left: 0px; width: 263.333px; margin-right: 12px;">
+                                                            <div class="character-slide-card card" style="overflow: hidden; width: inherit; height: inherit; box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 4px 0px; border: 0px; max-width: 99%; --darkreader-inline-boxshadow:rgba(13, 13, 13, 0.2) 2px 2px 4px 0px; --darkreader-inline-border-top: initial; --darkreader-inline-border-right: initial; --darkreader-inline-border-bottom: initial; --darkreader-inline-border-left: initial;" data-darkreader-inline-boxshadow="" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="">
+                                                               <div class="character-slide-box">
+                                                                  <div class="character-slide-info" style="padding: 8px; overflow: auto; cursor: pointer; width: 100%; aspect-ratio: 1 / 1; background-color: white; z-index: 100; opacity: 0.85; --darkreader-inline-bgcolor:#242525;" data-darkreader-inline-bgcolor="">I may be your maid, but you are nothing to me!</div>
+                                                                  <div class="character-slide-image" style="cursor: pointer;">
+                                                                     <div class="charater-avatar-image" style="width: 100%; border-radius: 4px 4px 0px 0px; aspect-ratio: 1 / 1; background-size: cover; background-image: linear-gradient(rgba(255, 255, 255, 0), 85%, rgba(0, 0, 0, 0.7)), url(&quot;https://characterai.io/i/400/static/avatars/uploaded/2022/10/15/LXLJ7znuaSN_7Ln4G2nvC0N_SSLKcnQw5Ng-uYlmo8E.webp&quot;); padding-bottom: 5px; filter: saturate(1); font-size: 4em;">
+                                                                        <div></div>
+                                                                        <div style="margin-bottom: -5px;"></div>
+                                                                        <div class="character-image-name" style="align-self: flex-start; padding-left: 5px;">Tsundere Maid</div>
+                                                                     </div>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="card-footer" style="padding: 5px; font-size: 12px;">
+                                                                  <div class="username-truncated"><a class="p-0 m-0" role="button" href="/public-profile/?username=AI_Waifu_Trainer" style="color: inherit; text-decoration: none; --darkreader-inline-color: inherit;" data-darkreader-inline-color="">@AI_Waifu_Trainer</a></div>
+                                                                  <div class="d-flex align-items-center">
+                                                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                                        <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                                     </svg>
+                                                                     193.8 K
+                                                                  </div>
+                                                                  <div class="description-truncated">I may be your maid, but you are nothing to me!</div>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                      <!-- <div class="swiper-button-prev swiper-button-disabled"></div>
+                                                      <div class="swiper-button-next"></div> -->
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="d-flex flex-column character-peek close">
+                                             <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-center">
+                                                   <div style="font-size: 20px; margin-right: 12px; font-weight: bold;"></div>
+                                                   <span id="user-interactions-badge" class="badge bg-secondary">
+                                                      0
+                                                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px; --darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;" data-darkreader-inline-fill="" data-darkreader-inline-stroke="">
+                                                         <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M431 320.6c-1-3.6 1.2-8.6 3.3-12.2a33.68 33.68 0 012.1-3.1A162 162 0 00464 215c.3-92.2-77.5-167-173.7-167-83.9 0-153.9 57.1-170.3 132.9a160.7 160.7 0 00-3.7 34.2c0 92.3 74.8 169.1 171 169.1 15.3 0 35.9-4.6 47.2-7.7s22.5-7.2 25.4-8.3a26.44 26.44 0 019.3-1.7 26 26 0 0110.1 2l56.7 20.1a13.52 13.52 0 003.9 1 8 8 0 008-8 12.85 12.85 0 00-.5-2.7z"></path>
+                                                         <path fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M66.46 232a146.23 146.23 0 006.39 152.67c2.31 3.49 3.61 6.19 3.21 8s-11.93 61.87-11.93 61.87a8 8 0 002.71 7.68A8.17 8.17 0 0072 464a7.26 7.26 0 002.91-.6l56.21-22a15.7 15.7 0 0112 .2c18.94 7.38 39.88 12 60.83 12A159.21 159.21 0 00284 432.11"></path>
+                                                      </svg>
+                                                   </span>
+                                                </div>
+                                                <div>
+                                                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" data-darkreader-inline-fill="" data-darkreader-inline-stroke="" style="--darkreader-inline-fill:currentColor; --darkreader-inline-stroke:currentColor;">
+                                                      <path d="M289.94 256l95-95A24 24 0 00351 127l-95 95-95-95a24 24 0 00-34 34l95 95-95 95a24 24 0 1034 34l95-95 95 95a24 24 0 0034-34z"></path>
+                                                   </svg>
+                                                </div>
+                                             </div>
+                                             <div>
+                                                <div style="font-style: italic;">@</div>
+                                             </div>
+                                             <div class="d-flex py-2 mt-2" style="flex: 1 1 0%;">
+                                                <div class="description-long"></div>
+                                             </div>
+                                             <div style="place-self: flex-end; margin-right: 8px;"><button type="button" class="btn btn-primary">Chat</button></div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="ReactModalPortal"></div>
+   </body>
+</html>

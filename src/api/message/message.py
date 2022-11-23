@@ -21,7 +21,7 @@ async def create_chat(chatDto: ChatDto):
             status_code = status.HTTP_400_BAD_REQUEST,
             content = { 'message' : str(e) }
             )
-@mess_router.post("/getallmessages")
+@mess_router.get("/getallmessages")
 async def getAllAChat(botID: str):
     try:
         print("Get All message from bot")

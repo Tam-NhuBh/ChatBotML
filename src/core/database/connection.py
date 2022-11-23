@@ -1,0 +1,16 @@
+from pymongo import MongoClient
+from dotenv import load_dotenv
+import os
+from os.path import join, dirname
+
+dotenv_path = join(dirname(__file__), '.env')
+load_dotenv(dotenv_path)
+
+MONGODBURL = os.environ.get("MONGODBURL")
+DBNAME = os.environ.get("DBNAME")
+PORT = os.environ.get("PORT")
+
+
+client = MongoClient(MONGODBURL, int(PORT))
+db = client['ChatbotDB']
+user_collection = db.get_collection('User')

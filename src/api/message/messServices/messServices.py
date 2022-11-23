@@ -1,11 +1,13 @@
 
+
 from api.message.entities.chatCreate import AppUser
 from bson import ObjectId
 import bson
 from core.database.connection import db, chat_collection,mess_collection
 from api.message.dtos.chat_dto import ChatDto
 from datetime import datetime
-
+from fastapi.responses import JSONResponse
+from fastapi.encoders   import jsonable_encoder
 
 
 class messService():
@@ -18,10 +20,10 @@ class messService():
             "dateMess": chat["dateMess"],
             
         }
-    def binding_user(self, datas):
-        users = []
+    def binding_chat(self, datas):
+        chats = []
         for data in datas:
-            user = {
+            chat = {
             "id": str(data["_id"]),
             "botID":str(data["botID"]),
             "userID": str(data["userID"]),
@@ -29,8 +31,8 @@ class messService():
             "dateMess": data["dateMess"],
 
             }
-            users.append(user)
-        return users
+            chats.append(chat)
+        return chats
             
     def chat_data(self, chatDto: ChatDto): 
         chat =  {
@@ -56,6 +58,18 @@ class messService():
         if find_chat:
             mess_collection.insert_one(dict(data))
             return {"message":"Chat Success","status": True}
+            
+        else:
+            return {"message":"Bot ID is not exist!","status": False}
+    def get_all_messAChat(self, chatID: str):
+
+        find_chat = chat_collection.find({
+            '_id': ObjectId(chatID)
+        }) 
+
+        if find_chat:
+            mess = mess_collection.find({'botID': ObjectId(chatID)})
+            return self.binding_chat(mess)
             
         else:
             return {"message":"Bot ID is not exist!","status": False}

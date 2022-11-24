@@ -16,3 +16,4 @@ db = client['ChatbotDB']
 user_collection = db.get_collection('User')
 chat_collection = db.get_collection('Botchat')
 mess_collection = db.get_collection('Message')
+payments_collection = db.get_collection('Payment')

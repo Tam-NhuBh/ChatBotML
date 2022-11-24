@@ -1,7 +1,7 @@
 from api.botchat.entities.chat import AppChat
 from bson import ObjectId
 import bson
-from core.database.connection import db, chat_collection
+from core.database.connection import db, chat_collection,payments_collection,user_collection
 from api.botchat.dtos.chatbot_dto import ChatBotDto
 from datetime import datetime
 from fastapi.responses import JSONResponse
@@ -53,4 +53,28 @@ class chatServices():
         chat_collection.insert_one(dict(data))
         return {"message":"Chat Bot Create Success","status": True}
     
-
+    def getlinkbot(self, securitykey: str,userID: str):
+        # kiem tra user
+        try:
+            find_user = user_collection.count_documents({'_id': ObjectId(userID)})
+            if find_user:
+                
+                    payment = payments_collection.find({
+                            '$and': [{'_id': ObjectId(securitykey)},
+                            {'status': bool("true")}]
+                    })
+                    if payment:
+                        mess = chat_collection.find({
+                            '_id': ObjectId(payment.botID)
+                        })
+                        data = self.chat_data(mess)
+                        
+                        return {"link":userID + "/" + data.link, "status": True}
+                    else:
+                        return {"message":"Your invoice has been deleted or does not exist!","status": False}
+                
+            else:
+                return {"message": "KeyError","status": False}
+    
+        except Exception as e:
+                return {"message": str(e),"status": False}

@@ -33,3 +33,18 @@ async def create_chat(chatDto: ChatBotDto):
             status_code = status.HTTP_400_BAD_REQUEST,
             content = { 'message' : str(e) }
             )
+@chat_router.put("/deletechat")
+async def detete_bot(chatID: str):
+    return await "Not active"
+@chat_router.get("/getlinkbuy")
+async def getlink_bot(securitykey: str, userID: str):
+    
+    try:
+        data = chat_services.getlinkbot(securitykey,userID)
+        return data
+    except Exception as e:
+        return JSONResponse(
+            status_code = status.HTTP_400_BAD_REQUEST,
+            content = { 'message' : str(e) }
+            )
+    

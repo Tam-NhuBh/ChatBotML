@@ -7,15 +7,15 @@ from datetime import datetime
 from fastapi.responses import JSONResponse
 from fastapi.encoders   import jsonable_encoder
 
-
-class chatService():
+class chatServices():
     def chat_helper(self, chat) -> dict:
         return {
             "id": str(chat["_id"]),
             "title":str(chat["title"]),
             "link": str(chat["link"]),
             "status": chat["status"],
-
+            "prices": chat["prices"],
+            "linkAvatar": chat["linkAvatar"],
             
         }
     def binding_chat(self, datas):
@@ -24,9 +24,10 @@ class chatService():
             chat = {
             "id": str(data["_id"]),
             "title":str(data["title"]),
-            "link": str(data["link"]),
+            #"link": str(data["link"]),
             "status": data["status"],
-
+            "prices" : data["prices"],
+            "linkAvatar": data["linkAvatar"]
 
             }
             chats.append(chat)
@@ -34,31 +35,22 @@ class chatService():
             
     def chat_data(self, chatDto: ChatBotDto): 
         chat =  {
-            "title": chatDto.botID,
-            "link": chatDto.userID,
-            "status": chatDto.message,
+            "title": chatDto.title,
+            "link": chatDto.link,
+            "status": chatDto.status,
+            "prices": chatDto.prices,
+            "linkAvatar": chatDto.linkAvatar,
         }
         return chat
     
-
-    
-    # def create_bot(self, chatDto: ChatBotDto):
-
-    #     data =  self.chat_data(chatDto)
-        
-
-    #     find_chat = chat_collection.find({
-    #         '_id': ObjectId(chatDto.botID)
-    #     }) 
-
-    #     if find_chat:
-    #         mess_collection.insert_one(dict(data))
-    #         return {"message":"Chat Success","status": True}
-            
-    #     else:
-    #         return {"message":"Bot ID is not exist!","status": False}
-
     def get_all_Chat(self):
         mess = chat_collection.find()
         return self.binding_chat(mess)
+    def create_bot(self, chatBOTDto: ChatBotDto):
+
+        data =  self.chat_data(chatBOTDto)
+        
+        chat_collection.insert_one(dict(data))
+        return {"message":"Chat Bot Create Success","status": True}
+    
 

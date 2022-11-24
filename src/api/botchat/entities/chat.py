@@ -12,7 +12,8 @@ class AppChat(Model):
     title: str = Field(...) 
     link: str =  Field(...)
     status: bool = Field(True)
-    
+    prices: str = Field(..., description="Price")
+    linkAvatar: str = Field(..., description="Avatar URL")
     
     class Config:
         allow_population_by_field_name = True
@@ -21,7 +22,8 @@ class AppChat(Model):
                 "_id": "066de609-b04a-4b30-b46c-32537c7f1f6e",
                 "title": "tamnhu",
                 "link": "tamnhu@hcmute.com",
-
+                "prices": "10000",
+                "linkAvatar":"tamnhu@hcmute.com"
             }
         }
         

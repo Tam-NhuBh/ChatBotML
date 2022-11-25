@@ -2,7 +2,7 @@
 from fastapi import APIRouter, Depends, Query, UploadFile, status
 from typing import List
 from typing import Union
-from api.botchat.chatServices.ChatServices import chatServices
+from api.botchat.chatServices.chatServices import chatServices
 from api.botchat.dtos.chatbot_dto import ChatBotDto
 from fastapi.responses import JSONResponse
 from datetime import datetime
@@ -33,6 +33,17 @@ async def create_chat(chatDto: ChatBotDto):
             status_code = status.HTTP_400_BAD_REQUEST,
             content = { 'message' : str(e) }
             )
+@chat_router.get("/searchBot")
+async def getsearch_bot(title: str):
+    
+    try:
+        data = chat_services.searchBot(title)
+        return data
+    except Exception as e:
+        return JSONResponse(
+            status_code = status.HTTP_400_BAD_REQUEST,
+            content = { 'message' : str(e) }
+            )
 @chat_router.put("/deletechat")
 async def detete_bot(chatID: str):
     return await "Not active"
@@ -47,4 +58,5 @@ async def getlink_bot(securitykey: str, userID: str):
             status_code = status.HTTP_400_BAD_REQUEST,
             content = { 'message' : str(e) }
             )
+
     

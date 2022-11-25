@@ -15,8 +15,7 @@ class chatServices():
             "link": str(chat["link"]),
             "status": chat["status"],
             "prices": chat["prices"],
-            "linkAvatar": chat["linkAvatar"],
-            
+            "linkAvatar": chat["linkAvatar"],  
         }
     def binding_chat(self, datas):
         chats = []
@@ -31,6 +30,7 @@ class chatServices():
 
             }
             chats.append(chat)
+        print(chats)
         return chats
             
     def chat_data(self, chatDto: ChatBotDto): 
@@ -75,6 +75,14 @@ class chatServices():
                 
             else:
                 return {"message": "KeyError","status": False}
-    
         except Exception as e:
                 return {"message": str(e),"status": False}
+    def searchBot(self, title: str):
+        chats = chat_collection.find({
+            "title":{'$regex':title}
+        })
+        
+
+        return self.binding_chat(chats)
+            
+    

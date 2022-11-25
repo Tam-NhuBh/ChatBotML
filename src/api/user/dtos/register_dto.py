@@ -1,4 +1,4 @@
-from sqlite3 import Date
+from datetime import datetime
 from pydantic import BaseModel, Field
 
 class RegisterDto(BaseModel):
